@@ -1,0 +1,14 @@
+const dateReducer = (state = 0, action) => {
+    switch (action.type){
+        case "date" : 
+            return new Date().getDate();
+        case "next" : 
+            return state + 1;
+        case "previous" : 
+            return state - 1;
+        default : 
+            return state
+    }
+}
+
+export default dateReducer;

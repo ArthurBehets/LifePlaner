@@ -1,0 +1,131 @@
+return ((
+            <section className="calendar">
+                <div><p>date : {date}, day : {day}, year : {year}, month : {month}, hours : {hours}, minutes : {minutes}</p></div>
+                <div className="calendar__weekDay monday">
+                    <h1 className="calendar__weekDay-title">Monday</h1>
+                    {days.map(({theDay, theDate, theMonth}) => (
+                        theDay === 1 
+                        ?  (
+                            theMonth === month 
+                            ? (
+                                <div key={theDate + theMonth} id={"d" + theDate + "m" + theMonth} className={"calendar__weekDay-date " + theDay + 'Class' + ((date === theDate && month === theMonth) ? (" today") : "")}>
+                                    <h1>{theDate} </h1>
+                                </div>
+                            )
+                            :   <div key={theDate + theMonth} id={"d" + theDate + "m" + theMonth} className={"calendar__weekDay-date " + theDay + 'Class otherMonths'}>
+                                    <h1>{theDate} </h1>
+                                </div>
+                        )
+                        : null
+                    ))}
+                </div>
+                <div className="calendar__weekDay tuesday">
+                    <h1 className="calendar__weekDay-title">Tuesday</h1>
+                    {days.map(({theDay, theDate, theMonth}) => (
+                        theDay === 2 
+                        ?  (
+                            theMonth === month 
+                            ? (
+                                <div key={theDate + theMonth} id={"d" + theDate + "m" + theMonth} className={"calendar__weekDay-date " + theDay + 'Class' + ((date === theDate && month === theMonth) ? (" today") : "")}>
+                                    <h1>{theDate} </h1>
+                                </div>
+                            )
+                            :   <div key={theDate + theMonth} id={"d" + theDate + "m" + theMonth} className={"calendar__weekDay-date " + theDay + 'Class otherMonths'}>
+                                    <h1>{theDate} </h1>
+                                </div>
+                        )
+                        : null
+                    ))}
+                </div>
+                <div className="calendar__weekDay wednesday">
+                    <h1 className="calendar__weekDay-title">Wednesday</h1>
+                    {days.map(({theDay, theDate, theMonth}) => (
+                        theDay === 3 
+                        ?  (
+                            theMonth === month 
+                            ? (
+                                <div key={theDate + theMonth} id={"d" + theDate + "m" + theMonth} className={"calendar__weekDay-date " + theDay + 'Class' + ((date === theDate && month === theMonth) ? (" today") : "")}>
+                                    <h1>{theDate} </h1>
+                                </div>
+                            )
+                            :   <div key={theDate + theMonth} id={"d" + theDate + "m" + theMonth} className={"calendar__weekDay-date " + theDay + 'Class otherMonths'}>
+                                    <h1>{theDate} </h1>
+                                </div>
+                        )
+                        : null
+                    ))}
+                </div>
+                <div className="calendar__weekDay thursday">
+                    <h1 className="calendar__weekDay-title">Thursday</h1>
+                    {days.map(({theDay, theDate, theMonth}) => (
+                        theDay === 4 
+                        ?  (
+                            theMonth === month 
+                            ? (
+                                <div key={theDate + theMonth} id={"d" + theDate + "m" + theMonth} className={"calendar__weekDay-date " + theDay + 'Class' + ((date === theDate && month === theMonth) ? (" today") : "")}>
+                                    <h1>{theDate} </h1>
+                                </div>
+                            )
+                            :   <div key={theDate + theMonth} id={"d" + theDate + "m" + theMonth} className={"calendar__weekDay-date " + theDay + 'Class otherMonths'}>
+                                    <h1>{theDate} </h1>
+                                </div>
+                        )
+                        : null
+                    ))}
+                </div>
+                <div className="calendar__weekDay friday">
+                    <h1 className="calendar__weekDay-title">Friday</h1>
+                    {days.map(({theDay, theDate, theMonth}) => (
+                        theDay === 5 
+                        ?  (
+                            theMonth === month 
+                            ? (
+                                <div key={theDate + theMonth} id={"d" + theDate + "m" + theMonth} className={"calendar__weekDay-date " + theDay + 'Class' + ((date === theDate && month === theMonth) ? (" today") : "")}>
+                                    <h1>{theDate} </h1>
+                                </div>
+                            )
+                            :   <div key={theDate + theMonth} id={"d" + theDate + "m" + theMonth} className={"calendar__weekDay-date " + theDay + 'Class otherMonths'}>
+                                    <h1>{theDate} </h1>
+                                </div>
+                        )
+                        : null
+                    ))}
+                </div>
+                <div className="calendar__weekDay saturday">
+                    <h1 className="calendar__weekDay-title">Saturday</h1>
+                    {days.map(({theDay, theDate, theMonth}) => (
+                        theDay === 6 
+                        ?  (
+                            theMonth === month 
+                            ? (
+                                <div key={theDate + theMonth} id={"d" + theDate + "m" + theMonth} className={"calendar__weekDay-date " + theDay + 'Class' + ((date === theDate && month === theMonth) ? (" today") : "")}>
+                                    <h1>{theDate} </h1>
+                                </div>
+                            )
+                            :   <div key={theDate + theMonth} id={"d" + theDate + "m" + theMonth} className={"calendar__weekDay-date " + theDay + 'Class otherMonths'}>
+                                    <h1>{theDate} </h1>
+                                </div>
+                        )
+                        : null
+                    ))}
+                </div>
+                <div className="calendar__weekDay sunday">
+                    <h1 className="calendar__weekDay-title">Sunday</h1>
+                    {days.map(({theDay, theDate, theMonth}) => (
+                        theDay === 0 
+                        ?  (
+                            theMonth === month 
+                            ? (
+                                <div key={theDate + theMonth} id={"d" + theDate + "m" + theMonth} className={"calendar__weekDay-date " + theDay + 'Class ' + ((date === theDate && month === theMonth) ? (" today") : "")}>
+                                    <h1>{theDate} </h1>
+                                </div>
+                            )
+                            :   <div key={theDate + theMonth} id={"d" + theDate + "m" + theMonth} className={"calendar__weekDay-date " + theDay + 'Class otherMonths'}>
+                                    <h1>{theDate} </h1>
+                                </div>
+                        )
+                        : null
+                    ))}
+                </div>
+            </section>
+        ))
